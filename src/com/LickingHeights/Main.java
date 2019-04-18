@@ -1,10 +1,17 @@
 package com.LickingHeights;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Would you like to know more about yourself?");
+        int month;
+        int date;
+        int year;
+
+        Scanner keyboard = new Scanner(System.in);
+
         System.out.println("Here is a nursery rhyme that can tell you about your character based on the day you were born");
         System.out.println("                                                       ");
 
@@ -16,6 +23,17 @@ public class Main {
                 "Saturday's child works hard for a living,\n" +
                 "But the child born on the Sabbath Day,\n" +
                 "Is fair and wise and good in every way.");
+
+        System.out.println("                                                       ");
+        System.out.println("Would you like to see what the nursery says about you?");
+        System.out.println("What month were you born in? (Enter as a number)");
+        month = keyboard.nextInt();
+
+        System.out.println("What date were you born?");
+        date = keyboard.nextInt();
+
+        System.out.println("What year were you born?");
+        year = keyboard.nextInt();
 
 
 
