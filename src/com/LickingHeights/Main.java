@@ -7,8 +7,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
-
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Here is a nursery rhyme that can tell you about your character based on the day you were born");
@@ -26,73 +24,77 @@ public class Main {
         System.out.println("                                                       ");
         System.out.println("Would you like to see what the nursery says about you?");
 
-    }
-
-    public static void printMonthName(Scanner keyboard) {
         int month;
         System.out.println("What month were you born in? (Enter as a number)");
         month = keyboard.nextInt();
-        switch (month) {
+
+        int date;
+        System.out.println("What is the date you were born?");
+        date = keyboard.nextInt();
+
+        int year;
+        System.out.println("What is the year you were born?");
+        year = keyboard.nextInt();
+
+
+        printMonthName(month, year);
+    }
+
+    public static String printMonthName(int tempMonth, int year) {
+
+        switch (tempMonth) {
             case 1:
-                System.out.println("January has 31 days.");
-                break;
+                return "January has 31 days.";
+
             case 2:
-                System.out.println("February has 28 days.");
-                break;
+                if (year % 4 ==0) {
+                    if  (year % 100 ==0){
+                        if(year % 400 ==0){
+                            return "February has 29 days"; }
+                        else{ return "February has 28 days"; } }
+                    else { return "February has 28 days"; } }
+                else{ return "February has 28 days";
+                }
+
             case 3:
-                System.out.println("March has 31 days.");
-                break;
+                return "March has 31 days.";
+
             case 4:
-                System.out.println("April has 30 days.");
-                break;
+                return "April has 30 days.";
+
             case 5:
-                System.out.println("May has 31 days.");
-                break;
+                return "May has 31 days.";
+
             case 6:
-                System.out.println("June has 30 days.");
-                break;
+                return "June has 30 days.";
+
             case 7:
-                System.out.println("July has 31 days.");
-                break;
+                return "July has 31 days.";
+
             case 8:
-                System.out.println("August has 31 days.");
-                break;
+                return "August has 31 days.";
+
             case 9:
-                System.out.println("September has 30 days.");
-                break;
+                return "September has 30 days.";
+
             case 10:
-                System.out.println("October has 31 days.");
-                break;
+                return "October has 31 days.";
+
             case 11:
-                System.out.println("November has 30 days.");
-                break;
+                return "November has 30 days.";
+
             case 12:
-                System.out.println("December has 31 days.");
-                break;
+                return "December has 31 days.";
+            default:
+                return "Could not calculate the month";
 
 
         }
     }
-
-    public static void printDayBorn (Scanner keyboard) {
-        int date;
-        System.out.println("What is the date you were born?");
-        
-
-
-        int year;
-
-
-
-
-
-
-
-
-    }
-
-
 }
+
+
+
 
 
 
