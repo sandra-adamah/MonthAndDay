@@ -96,7 +96,7 @@ public class Main {
 
         int newFeburary, newJanuary;
         if (month == 2){
-            month + = newFeburary;
+            return month + = newFeburary;
 
             else if (month == 1);{
                  month + 2 = newJanuary;
@@ -109,23 +109,39 @@ public class Main {
 
     }
 
+   /* "Monday's child is fair of face,\n" +
+            "Tuesday's child is full of grace,\n" +
+            "Wednesday's child is full of woe,\n" +
+            "Thursday's child has far to go.\n" +
+            "Friday's child is loving and giving,\n" +
+            "Saturday's child works hard for a living,\n" +
+            "But the child born on the Sabbath Day,\n" +
+            "Is fair and wise and good in every way.");*/
+
+
+    public static String printNuseryLine (int dayResult){
+        switch (dayResult){
+            case 0:
+                return "According to the poem you are someone who works hard for a living.";
+            case 1:
+                return "According to the poem you are someone who is fair, wise, and good in every way.";
+            case 2:
+                return "According to the poem you are someone who is fair of face.";
+            case 3:
+                return "According to the poem you are someone who is fu8ll of grace.";
+            case 4:
+                return "According to the poem you are someone who is full of woe.";
+            case 5:
+                return "According to the poem you are someone who has far to go.";
+            case 6:
+                return "According to the poem you are someone who is loving and giving.";
+            default:
+                return "error";
+        }
+
+    }
 
 }
 
- /* 0=Saturday
- * 1=Sunday
- * 2 Monday
- * 3=Tuesday
- * 4=Wednesday
- * 5= Thursday
- * 6= Friday
- *
- *
- *
- *
- *3= March
- * 4= April
- * 5= May
- * 6= J
- *
- * J= actual year (20..)*/
+
+//J= actual year (20..)
