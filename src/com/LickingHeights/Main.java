@@ -38,6 +38,7 @@ public class Main {
 
 
         printMonthName(month, year);
+        printDayBorn(date, month, year);
     }
 
     public static String printMonthName(int tempMonth, int year) {
@@ -91,19 +92,25 @@ public class Main {
 
         }
     }
+    public static String printDayBorn (int date, int year, int month){
+
+        int newFeburary, newJanuary;
+        if (month == 2){
+            month + = newFeburary;
+
+            else if (month == 1);{
+                 month + 2 = newJanuary;
+            }
+            }
+
+
+        int dayResult;
+        dayResult = (date+(((13(month+1))/5)+
+
+    }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
  /* 0=Saturday
  * 1=Sunday
